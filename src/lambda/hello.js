@@ -5,6 +5,8 @@ exports.handler = function(event, context, callback) {
     body: JSON.stringify({
       msg:
         "Hieee. I am being pulled in using a lambda function and the fetch API.",
+      identity: `${identity}`,
+      user: `${user}`,
     }),
   })
   console.log(identity, user)

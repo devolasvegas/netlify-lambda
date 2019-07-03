@@ -14,6 +14,7 @@ const IndexPage = () => {
         .then(res => res.json())
         .catch(e => console.error(e))
       setStuff(thingy.msg)
+      console.log(thingy.user)
     }
     callFunction()
   })
