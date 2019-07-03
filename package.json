@@ -29,7 +29,9 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
+    "start:lambda": "netlify-lambda serve src/lambda",
     "start": "npm run develop",
+    "build:lambda": "netlify-lambda build src/lambda",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
