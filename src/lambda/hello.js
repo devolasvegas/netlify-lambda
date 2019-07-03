@@ -1,4 +1,5 @@
 exports.handler = function(event, context, callback) {
+  const { identity, user } = context.clientContext
   callback(null, {
     statusCode: 200,
     body: JSON.stringify({
@@ -6,5 +7,5 @@ exports.handler = function(event, context, callback) {
         "Hieee. I am being pulled in using a lambda function and the fetch API.",
     }),
   })
-  console.log(context)
+  console.log(identity, user)
 }
